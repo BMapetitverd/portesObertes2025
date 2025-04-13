@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Formulario de Inscripción FP</h1>
+<form method="POST">
+    <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="fp">Ciclo Formativo:</label>
+        <select id="fp" name="fp" required>
+            <option value="">-- Selecciona un FP --</option>
+            <option value="ASIX">ASIX - Administración de Sistemas Informáticos en Red</option>
+            <option value="DAW">DAW - Desarrollo de Aplicaciones Web</option>
+            <option value="DAM">DAM - Desarrollo de Aplicaciones Multiplataforma</option>
+        </select>
+    </div>
+    
+    <button type="submit">Enviar Solicitud</button>
+</form>
+{% endblock %}
